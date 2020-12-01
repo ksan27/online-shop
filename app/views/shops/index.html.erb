@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <%= render "header" %>
+</div>
+<main>
+  <div class="title">
+    <h1>-My favoritesとは-</h1>
+    <p>自分のお気に入りのブランドをまとめられるサービスです...♡</p>
+    <p>好きな画像にブランドのurlを登録して、自分好みのブランドまとめサイトが作れます</p>
+  </div>
+  <% if user_signed_in? %>
+    <div class="grid-6">
+      <%= link_to "LOGOUT", destroy_user_session_path, method: :delete , class: "post"%>
+      <%= link_to "UPLOAD", "#", class: "post"%>
+      <div class="favorite-list">
+        <%= current_user.nickname %>
+        <p> - Favorite List-</p>
+      </div>
+    </div>
+  <% else %>
+  <div class="grid-6">
+    <%= link_to "LOGIN", new_user_session_path, class: "post"%>
+    <%= link_to "SIGN UP", new_user_registration_path, class: "post"%>
+    <p class="favorite-list"> - Favorite List-</p>
+  </div>
+  <% end %>
+  <div class="sample-image">
+    <div class="sample-image2">
+      <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
+      <p>my brand1</p>
+    </div>
+    <div class="sample-image2">
+      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample2" %>
+      <p>my brand2</p>
+    </div>
+    <div class="sample-image2">
+      <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
+      <p>my brand3</p>
+    </div>
+    <div class="sample-image2">
+      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample2" %>
+      <p>my brand4</p>
+    </div>
+  </div>
+</main>
+<div class="footer">
+  <%= render "footer" %>
+</div>
