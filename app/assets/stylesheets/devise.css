@@ -1,4 +1,4 @@
-
+/* deviseのCSS */
 .container{
   margin:0 auto;
   text-align: center;
@@ -34,4 +34,40 @@
 .submit:hover{
   border:1px dashed #111111;
   margin-bottom: 2px;
+}
+
+/* uploadのCSS */
+.text-form{
+  padding: 3px 12px;
+  width: 450px;
+}
+.click-upload{
+  padding-bottom: 10px;
+}
+.click-upload p{
+  font-size: 13px;
+  color: #db7093;
+}
+.file-form{
+  font-size: 15px;
+}
+.attention-message{
+  font-size: 13px;
+  padding:10px 0;
+}
+.image-text{
+  padding: 10px 0px;
+}
+/* エラーメッセージ */
+.login-flash-message{
+  margin-top: 10px;
+  font-size: 13px;
+  color: #dc143c;
+}
+.error-alert{
+  margin-top: 10px;
+}
+.error-message{
+  font-size: 13px;
+  color: #dc143c;
 }

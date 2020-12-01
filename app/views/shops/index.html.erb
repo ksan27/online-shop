@@ -10,7 +10,7 @@
   <% if user_signed_in? %>
     <div class="grid-6">
       <%= link_to "LOGOUT", destroy_user_session_path, method: :delete , class: "post"%>
-      <%= link_to "UPLOAD", "#", class: "post"%>
+      <%= link_to "UPLOAD", new_shop_path, class: "post"%>
       <div class="favorite-list">
         <%= current_user.nickname %>
         <p> - Favorite List-</p>
@@ -23,6 +23,16 @@
     <p class="favorite-list"> - Favorite List-</p>
   </div>
   <% end %>
+  <% if user_signed_in? %>
+    <div class="sample-image">
+      <% @shops.each do |shop| %>
+        <div class="sample-image2">
+          <%= image_tag shop.image, class: 'sample1'%>
+          <br><%= shop.name %>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
   <div class="sample-image">
     <div class="sample-image2">
       <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
@@ -41,6 +51,9 @@
       <p>my brand4</p>
     </div>
   </div>
+  <% end %>
+  <div class="sample-image">
+</div>
 </main>
 <div class="footer">
   <%= render "footer" %>
