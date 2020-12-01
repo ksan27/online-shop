@@ -4,3 +4,6 @@ ja:
      user:
        nickname: ニックネーム
        remember_me: 次回から自動的にログイン
+     shop:
+       name: ブランドネーム
+       shop_url: ショップURL

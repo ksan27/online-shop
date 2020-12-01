@@ -1,4 +1,4 @@
-
+/* deviseのCSS */
 .container{
   margin:0 auto;
   text-align: center;
@@ -34,4 +34,10 @@
 .submit:hover{
   border:1px dashed #111111;
   margin-bottom: 2px;
+}
+
+/* uploadのCSS */
+.text-form{
+  padding: 3px 12px;
+  width: 450px;
 }

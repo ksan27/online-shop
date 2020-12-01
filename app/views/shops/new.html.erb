@@ -1,0 +1,20 @@
+<div class="contents row">
+  <div class="container">
+    <h2>- Up load -</h2>
+    <%= form_with(model: @shop, id: 'new_user', class: 'new_user', local: true) do |f| %>
+      <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name, {class: "form"} %>
+      </div>
+
+      <div class="field">
+        <%= f.label :shop_url %><br />
+        <%= f.text_field :shop_url, {class: "text-form"} %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "アップロード", {class: "submit"}%>
+      </div>
+    <% end %>
+  </div>
+</div>
