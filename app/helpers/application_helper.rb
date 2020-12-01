@@ -1,8 +1,8 @@
 module ApplicationHelper
-
   def devise_error_messages
-    return "" if resource.errors.empty?
-    html = ""
+    return '' if resource.errors.empty?
+
+    html = ''
     # エラーメッセージ用のHTMLを生成
     messages = resource.errors.full_messages.each do |msg|
       html += <<-EOF
@@ -13,5 +13,4 @@ module ApplicationHelper
     end
     html.html_safe
   end
-  
 end

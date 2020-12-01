@@ -18,6 +18,7 @@ class ShopsController < ApplicationController
   end
 
   private
+
   def shop_params
     params.require(:shop).permit(:name, :shop_url, :image).merge(user_id: current_user.id)
   end
