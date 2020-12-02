@@ -1,7 +1,8 @@
 class ShopsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :show]
-  before_action :set_shop, only: [:show, :edit, :update]
+  before_action :set_shop, only: [:show, :edit, :update, :destroy]
   before_action :move_to_index, only: [:show, :edit]
+  
   def index
     @shops = Shop.all
   end
@@ -31,6 +32,11 @@ class ShopsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @shop.destroy
+    redirect_to root_path
   end
 
   private

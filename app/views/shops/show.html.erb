@@ -11,7 +11,7 @@
           <%= link_to 'EDIT', edit_shop_path, {method: :get, class: "link-text1"} %>
         </li>
         <li>
-          <%= link_to 'DELETE', "#", {method: :delete, class: "link-text2"} %>
+          <%= link_to 'DELETE', shop_path(@shop.id), {method: :delete, class: "link-text2"} %>
         </li>
         <p class="brand-name">ShopName</p>
         <p class="shop-url">URL</p>
