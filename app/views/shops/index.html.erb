@@ -26,6 +26,7 @@
   <% if user_signed_in? %>
     <div class="sample-image">
       <% @shops.each do |shop| %>
+        <% if current_user.id == shop.user_id%>
         <div class="sample-image2">
             <%= shop.name %>
             <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
@@ -33,6 +34,7 @@
             <%= link_to "#{shop.name}へ行く", shop.shop_url, class:"shop-name"%>
           </div>
         </div>
+        <% end %>
       <% end %>
     </div>
   <% else %>
