@@ -1,4 +1,8 @@
 <div class= "top-header2">
   <%= link_to "My favorites.", root_path, class: "title-page" %>
-  <%= link_to "マイページ", root_path, class: "my-page"%>
+  <div class= btn-list>
+    <li><%= link_to current_user.nickname, root_path, class: "my-page"%></li>
+    <li><%= link_to "LOGOUT", destroy_user_session_path, method: :delete , class: "post1"%></li>
+    <li><%= link_to "UPLOAD", new_shop_path, class: "post1"%></li>
+  </div>
 </div>

@@ -26,7 +26,6 @@
 .post {
   display: inline-block;
   max-width: 180px;
-  text-align: left;
   font-size: 16px;
   color: #111111;
   text-decoration: none;
@@ -56,6 +55,13 @@
   text-align: center;
   margin: 20px 20px;
 }
+.favorite-list1{
+  font-size: 20px;
+  font-family: serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 90px 20px 20px;
+}
 .sample-image{
   width: 100%;
   text-align: center;
@@ -83,7 +89,7 @@
   box-shadow: -4px -4px 0 #000;
 }
 .shops-name{
-  margin: 10px 10px;
+  margin: 10px 0px 90px 0px;
 }
 .sample1{
   width: 200px;
@@ -106,16 +112,28 @@
   background-color: #fff;
   text-decoration: none;
 }
+.btn-list{
+  list-style: none;
+  display: flex;
+  margin-right: 10%;
+}
 .my-page{
   color: #111111;
   font-weight: bold;
   padding: 5px 10px;
-  margin-right: 10%;
-  border: solid 2px #fff;
   text-decoration: none;
+  border-bottom: dashed 1px #111111;
 }
-.my-page:hover{
-  border-style: dashed;
+.post1 {
+  max-width: 180px;
+  font-size: 16px;
+  color: #111111;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: serif;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: 2px solid #111111;
 }
 /* フッターCSS */
 .footer-name{
