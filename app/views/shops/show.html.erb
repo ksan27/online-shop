@@ -1,26 +1,25 @@
 <%= render "header2" %>
-
-<div class="sample-image">
+<main>
   <div class="sample-image2">
     <div class="show-image">
+      <%= image_tag @shop.image, class: 'sample2' %>
       <ul class="link-list">
-        <li>
-          <%= image_tag @shop.image, class: 'sample2' %>
-        </li>
         <li>
           <%= link_to 'EDIT', edit_shop_path, {method: :get, class: "link-text1"} %>
         </li>
         <li>
           <%= link_to 'DELETE', shop_path(@shop.id), {method: :delete, class: "link-text2"} %>
         </li>
-        <p class="brand-name">ShopName</p>
-        <p class="shop-url">URL</p>
-        <p class="brand-name2"><%= @shop.name %></p>
-        <p class="shop-url2"><%= @shop.shop_url %></p>
+        <div class="link-list2">
+          <p class="brand-name">ShopName</p>
+          <p class="brand-name2"><%= @shop.name %></p>
+          <p class="shop-url">URL</p>
+          <p class="shop-url2"><%= @shop.shop_url %></p>
+        </div>
       </ul>
     </div>
   </div>
-</div>
+</main>
 <div class="footer">
   <%= render "footer" %>
 </div>

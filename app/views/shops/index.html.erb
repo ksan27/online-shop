@@ -24,10 +24,10 @@
     <p class="favorite-list"> -- Favorite List --</p>
   </div>
   <% end %>
-  <% if user_signed_in? %>
+  <% if user_signed_in? && current_user.shops.length != 0 %>
     <div class="sample-image">
       <% @shops.each do |shop| %>
-        <% if current_user.id == shop.user_id%>
+        <% if current_user.id == shop.user_id %>
         <div class="sample-image2">
             <%= shop.name %>
             <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
@@ -41,29 +41,35 @@
   <% else %>
   <div class="sample-image">
     <div class="sample-image2">
-      <p>my brand1</p>
+      <p>sample brand1</p>
       <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <br><a class="shop-name">CLICKでURLへ！</a>
+      <div class="shops-name">
+        <a class="shop-name">CLICKでURLへ！</a>
+      </div>
     </div>
     <div class="sample-image2">
-      <p>my brand2</p>
+      <p>sample brand2</p>
       <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <br><a class="shop-name">CLICK！</a>
+      <div class="shops-name">
+        <a class="shop-name">CLICK！</a>
+      </div>
     </div>
     <div class="sample-image2">
-      <p>my brand3</p>
+      <p>sample brand3</p>
       <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <br><a class="shop-name">CLICKでURLへ！</a>
+      <div class="shops-name">
+        <a class="shop-name">CLICKでURLへ！</a>
+      </div>
     </div>
     <div class="sample-image2">
-      <p>my brand4</p>
+      <p>sample brand4</p>
       <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <br><a class="shop-name">CLICK！</a>
+      <div class="shops-name">
+        <a class="shop-name">CLICK！</a>
+      </div>
     </div>
   </div>
   <% end %>
-  <div class="sample-image">
-</div>
 </main>
 <div class="footer">
   <%= render "footer" %>
