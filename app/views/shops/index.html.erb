@@ -13,7 +13,7 @@
       <%= link_to "UPLOAD", new_shop_path, class: "post"%>
       <div class="favorite-list">
         <%= current_user.nickname %>
-        <p> - Favorite List-</p>
+        <p> -- Favorite List --</p>
       </div>
     </div>
   <% else %>
@@ -26,10 +26,15 @@
   <% if user_signed_in? %>
     <div class="sample-image">
       <% @shops.each do |shop| %>
+        <% if current_user.id == shop.user_id%>
         <div class="sample-image2">
-          <%= image_tag shop.image, class: 'sample1'%>
-          <br><%= shop.name %>
+            <%= shop.name %>
+            <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
+          <div class="shops-name">
+            <%= link_to "#{shop.name}へ行く", shop.shop_url, class:"shop-name"%>
+          </div>
         </div>
+        <% end %>
       <% end %>
     </div>
   <% else %>
@@ -39,7 +44,7 @@
       <p>my brand1</p>
     </div>
     <div class="sample-image2">
-      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample2" %>
+      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
       <p>my brand2</p>
     </div>
     <div class="sample-image2">
@@ -47,7 +52,7 @@
       <p>my brand3</p>
     </div>
     <div class="sample-image2">
-      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample2" %>
+      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
       <p>my brand4</p>
     </div>
   </div>
