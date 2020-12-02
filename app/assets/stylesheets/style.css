@@ -70,6 +70,7 @@
 /* URLへ飛ぶボタン */
 .shop-name{
   color: #111111;
+  font-size: 15px;
   font-family: serif;
   padding: 8px 10px;
   text-decoration: none;
