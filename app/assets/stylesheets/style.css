@@ -50,10 +50,11 @@
 }
 
 .favorite-list{
+  font-size: 20px;
   font-family: serif;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 20px;
 }
 .sample-image{
   width: 100%;
@@ -66,21 +67,56 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
+/* URLへ飛ぶボタン */
+.shop-name{
+  color: #111111;
+  font-family: serif;
+  padding: 8px 10px;
+  text-decoration: none;
+  border: 2px solid #000;
+  -webkit-box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 #000;
+}
+.shop-name:hover{
+  -webkit-box-shadow: -4px -4px 0 #000;
+  box-shadow: -4px -4px 0 #000;
+}
+.shops-name{
+  margin: 10px 10px;
+}
 .sample1{
   width: 200px;
   height: 200px;
   margin: 10px 10px;
 }
-.sample2{
-  width: 200px;
-  height: 200px;
-  margin: 10px 10px;
+/* ヘッダー２のCSS */
+.top-header2{
+  background-color:#ffebe3;
+  padding: 14px 0px;
+  font-family: serif;
+  display: flex;
+  justify-content: space-between;
 }
-.sample3{
-  width: 200px;
-  height: 200px;
-  margin: 10px 10px;
+.title-page{
+  color: #111111;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 10%;
+  background-color: #fff;
+  text-decoration: none;
 }
+.my-page{
+  color: #111111;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 10%;
+  border: solid 2px #fff;
+  text-decoration: none;
+}
+.my-page:hover{
+  border-style: dashed;
+}
+/* フッターCSS */
 .footer-name{
   background-color:#ffebe3;
 }
@@ -89,4 +125,60 @@
   color: #111111;
   padding: 20px 0px;
   font-family: serif;
+}
+/* 詳細ページのCSS */
+.link-list{
+  margin: 100px 0;
+  position: relative;
+}
+.link-list li{
+  display: inline-block;
+}
+.link-text1{
+  position: absolute;
+  top: 20px;
+  left: 330px;
+  color: #111111;
+  padding: 10px 14px;
+  border: solid 2px #111111;
+  text-decoration: none;
+}
+.link-text2{
+  position: absolute;
+  top: 20px;
+  left: 420px;
+  color: #111111;
+  padding: 10px 14px;
+  border: solid 2px #111111;
+  text-decoration: none;
+}
+.brand-name{
+  position: absolute;
+  top: 110px;
+  left: 330px;
+  font-size: 20px;
+}
+.shop-url{
+  position: absolute;
+  top: 200px;
+  left: 330px;
+  font-size: 20px;
+}
+.brand-name2{
+  position: absolute;
+  top: 160px;
+  left: 330px;
+}
+.shop-url2{
+  position: absolute;
+  top: 250px;
+  left: 330px;
+}
+.link-text1:hover,.link-text2:hover{
+  border-style: dashed;
+}
+.sample2{
+  width: 300px;
+  height: 300px;
+  margin: 10px 10px;
 }

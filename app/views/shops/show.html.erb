@@ -1,0 +1,26 @@
+<%= render "header2" %>
+
+<div class="sample-image">
+  <div class="sample-image2">
+    <div class="show-image">
+      <ul class="link-list">
+        <li>
+          <%= image_tag @shop.image, class: 'sample2' %>
+        </li>
+        <li>
+          <%= link_to 'EDIT', "#", {method: :get, class: "link-text1"} %>
+        </li>
+        <li>
+          <%= link_to 'DELETE', "#", {method: :delete, class: "link-text2"} %>
+        </li>
+        <p class="brand-name">ShopName</p>
+        <p class="shop-url">URL</p>
+        <p class="brand-name2"><%= @shop.name %></p>
+        <p class="shop-url2"><%= @shop.shop_url %></p>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <%= render "footer" %>
+</div>
