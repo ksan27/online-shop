@@ -1,0 +1,51 @@
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .text-image p{
+    font-size: 45px;
+  }
+  .image{
+    width:100%;
+    height:60vh;
+  }
+  .text-image:before{
+    display:none;
+  }
+}
+@media (max-width: 599px) {
+  .sample1{
+    width: 180px;
+    height: 180px;
+    margin: 10px 10px;
+  }
+  .my-page{
+    display:none;
+  }
+  .post1{
+  font-size: 14px;
+  padding: 7px 16px;
+  margin-left: 6px;
+  }
+  .btn-list{
+    margin-right: 5%;
+  }
+  .title-page{
+    margin-left: 5%;
+  }
+  .container{
+    width: 450px;
+  }
+  .text-form{
+    width: 430px;
+  }
+  .text-image{
+    height:50vh;
+    position: relative;
+  }
+  .image{
+    width:100%;
+    height:50vh;
+  }
+  .text-image p{
+    font-size: 40px;
+  }
+}
