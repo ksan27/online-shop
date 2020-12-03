@@ -1,21 +1,52 @@
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 main{
-  width: 1000px;
+  width: 80vw;
   margin: 0 auto;
 }
 .text-image{
-  width: 100%;
-  height: 250px;
-  background-color: #ffebe3;
+  width:100vw;
+  height:60vh;
+  text-align: center;
+  position: relative;
+  background:
+  url("top-image.jpg") no-repeat center;
+  background-size: cover;
+  z-index: 0;
+}
+.text-image:before{
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  position: absolute;
+	/*ぼかし効果で画像の端がボヤけた分だけ位置を調整*/
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: 4px;
+	z-index: -1;
+}
+.image{
+  width:80%;
+  height:60vh;
 }
 .text-image p{
-  padding: 50px 0px;
-  margin-left: 15%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   font-size: 55px;
   font-weight: bold;
   font-family: serif;
   color: #111111;
   text-shadow:1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;
 }
+/* ログインボタン */
 .grid-6{
   text-align: center;
 }
@@ -34,12 +65,19 @@ main{
 .post:hover{
   border-style: dashed;
 }
-
-.title{
+.title-all{
+  width: 100%;
   text-align: center;
-  margin: 70px 0 40px 0;
 }
-
+.title{
+  display: inline-block;
+  max-width: 700px;
+  padding: 15px 0;
+  border-top:1px solid #111111;
+  border-bottom: 1px solid #111111;
+  text-align: center;
+  margin: 70px 5px 40px 5px;
+}
 .title h1{
   font-size: 20px;
 }
@@ -59,7 +97,6 @@ main{
   margin: 90px 20px 20px;
 }
 .sample-image{
-  width: 100%;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +150,7 @@ main{
   list-style: none;
   display: flex;
   margin-right: 10%;
+  margin-top: 4px;
 }
 .my-page{
   color: #111111;

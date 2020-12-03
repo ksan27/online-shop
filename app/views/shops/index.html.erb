@@ -4,11 +4,13 @@
   <div class="wrapper">
     <%= render "header" %>
   </div>
+<div class="title-all">
   <div class="title">
     <h1>-My favoritesとは-</h1>
     <p>自分のお気に入りのブランドをまとめられるサービスです...♡</p>
     <p>好きな画像にブランドのurlを登録して、自分好みのブランドまとめサイトが作れます</p>
   </div>
+</div>
 <% end %>
 <main>
   <% if user_signed_in? %>
@@ -32,7 +34,7 @@
             <%= shop.name %>
             <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
           <div class="shops-name">
-            <%= link_to "CLICK", shop.shop_url, class:"shop-name"%>
+            <%= link_to "CLICK！", shop.shop_url, class:"shop-name"%>
           </div>
         </div>
         <% end %>
@@ -58,7 +60,7 @@
       <p>sample brand3</p>
       <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
       <div class="shops-name">
-        <a class="shop-name">CLICKでURLへ！</a>
+        <a class="shop-name">CLICK！</a>
       </div>
     </div>
     <div class="sample-image2">
