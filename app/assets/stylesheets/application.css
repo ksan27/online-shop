@@ -10,10 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
-
+@import"devise.css";
+@import"style.css";
+@import"style2.css";
  * {
   box-sizing: border-box;
 }
