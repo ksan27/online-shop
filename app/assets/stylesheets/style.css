@@ -30,8 +30,9 @@ main{
 	z-index: -1;
 }
 .image{
-  width:80%;
   height:60vh;
+  width: 80%;
+  background-size: cover;
 }
 .text-image p{
   position: absolute;
@@ -76,7 +77,7 @@ main{
   border-top:1px solid #111111;
   border-bottom: 1px solid #111111;
   text-align: center;
-  margin: 70px 5px 40px 5px;
+  margin: 60px 5px 30px 5px;
 }
 .title h1{
   font-size: 20px;
@@ -137,6 +138,7 @@ main{
   font-family: serif;
   display: flex;
   justify-content: space-between;
+  background-size: cover;
 }
 .title-page{
   color: #111111;
@@ -173,6 +175,7 @@ main{
 /* フッターCSS */
 .footer-name{
   background-color:#ffebe3;
+  background-size: cover;
 }
 .footer-name p{
   text-align: center;
