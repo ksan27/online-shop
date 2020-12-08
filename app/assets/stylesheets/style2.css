@@ -45,4 +45,13 @@
   .text-image p{
     font-size: 40px;
   }
+  .my-page1{
+    display: inline;
+    color: #111111;
+    font-weight: bold;
+    font-family: serif;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: dashed 1px #111111;
+  }
 }

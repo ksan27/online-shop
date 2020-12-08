@@ -72,19 +72,19 @@
 /* ユーザー詳細画面 */
 .profile{
   width: 500px;
-  height: 400px;
+  height: 380px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   font-family: serif;
   text-align: center;
   background-color: #ffebe3;
   border: 1px solid #808080;
 }
 .profile2{
-  padding:80px 0;
+  padding:60px 0;
 }
 .profile p{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .profile-show{
