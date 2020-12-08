@@ -9,20 +9,15 @@ main{
 .text-image{
   width:100vw;
   height:60vh;
-  text-align: center;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background:
   url("top-image.jpg") no-repeat center;
   background-size: cover;
-  z-index: 0;
+  margin: 0 auto;
 }
 .text-image p{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   font-size: 55px;
   font-weight: bold;
   font-family: serif;
@@ -120,7 +115,7 @@ main{
   font-family: serif;
   display: flex;
   justify-content: space-between;
-  width:100%;
+  margin: 0 auto;
 }
 .title-page{
   color: #111111;
@@ -157,7 +152,7 @@ main{
 /* フッターCSS */
 .footer-name{
   background-color:#ffebe3;
-  width: 100%;
+  margin: 0 auto;
 }
 .footer-name p{
   text-align: center;
