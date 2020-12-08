@@ -9,13 +9,11 @@
 .container h2{
   padding-bottom: 15px;
   font-size: 23px;
+  font-weight: bold;
 }
 .new_user{
   background-color: #ffebe3;
   border: 1px solid #808080;
-}
-.container h2{
-  font-weight: bold;
 }
 .field{
   padding: 10px 10px;
@@ -70,4 +68,43 @@
 .error-message{
   font-size: 13px;
   color: #dc143c;
+}
+/* ユーザー詳細画面 */
+.profile{
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: serif;
+  text-align: center;
+  background-color: #ffebe3;
+  border: 1px solid #808080;
+}
+.profile2{
+  padding:80px 0;
+}
+.profile p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile-show{
+  background-color: #fff;
+  padding: 6px 0;
+  margin: 10px 90px;
+  border-radius: 3px;
+}
+/* ユーザー編集画面 */
+.user-delete{
+  margin-top: 20px;
+}
+.user-delete p{
+  font-size: 14px;
+  color: #dc143c;
+  padding-bottom: 5px;
+}
+.user-back{
+  color: #111111;
+}
+.user-back:hover{
+  color: #808080;
 }

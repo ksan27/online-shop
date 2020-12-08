@@ -1,0 +1,14 @@
+<%= render "shops/header2" %>
+  <p class="favorite-list">--About Me--</p>
+  <div class="profile">
+    <div class="profile2">
+      <p>ユーザー名</p>
+      <div class="profile-show"><%= @user.nickname %></div>
+      <p>メールアドレス</p>
+      <div class="profile-show"><%= @user.email %></div>
+     <%= link_to 'EDIT', edit_user_registration_path, class: "post"%>
+    </div>
+  </div>
+<div class="footer">
+  <%= render "shops/footer" %>
+</div>

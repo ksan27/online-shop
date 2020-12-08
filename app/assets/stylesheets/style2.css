@@ -28,7 +28,7 @@
   .title-page{
     margin-left: 5%;
   }
-  .container{
+  .container,.profile{
     width: 450px;
   }
   .text-form{
