@@ -34,9 +34,9 @@
       </div>
 
       <div class="actions">
-        <%= f.submit "アプロード", {class: "submit"} %>
+        <%= f.submit "完了", {class: "submit"} %>
       </div>
-      <%= link_to "Back", :back, class: "user-back" %>
+      <%= link_to "Back", user_path(@user.id), class: "user-back" %>
     <% end %>
 
     <div class="user-delete">
