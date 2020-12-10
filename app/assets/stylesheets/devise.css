@@ -33,7 +33,23 @@
   border:1px dashed #111111;
   margin-bottom: 2px;
 }
-
+.google-form{
+  background-color: #ea4335;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 0;
+  margin: 12px 140px;
+  border-radius: 5px;
+  border:solid 1px #ffffff;
+}
+.google-form:hover{
+  background-color: #f08080;
+}
+.google{
+  color: #ffffff;
+  font-family: sans-serif;
+  text-decoration: none;
+}
 /* uploadのCSS */
 .text-form{
   padding: 3px 12px;
