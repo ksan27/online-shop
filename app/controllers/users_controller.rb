@@ -5,5 +5,4 @@ class UsersController < ApplicationController
     @users = User.find(params[:id])
     @user = current_user
   end
-
 end
