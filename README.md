@@ -84,12 +84,14 @@ id: admin
 
 - belongs_to :user
 
-### sns_credentials テーブル
+## sns_credentials テーブル
 | Column   | Type       | Options     |
 | -------- | ---------- | ----------- |
 | provider | string     | null: false |
 | uid      | string     | null: false |
 | user     | references | null: false, foreign_key: true |
+
+### Association
 
 - belongs_to :user
 
