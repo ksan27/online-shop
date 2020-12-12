@@ -72,6 +72,9 @@
 .image-text{
   padding: 10px 0px;
 }
+.genre-select{
+  padding: 2px 46px;
+}
 /* エラーメッセージ */
 .login-flash-message{
   margin-top: 10px;

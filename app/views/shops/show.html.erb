@@ -12,10 +12,12 @@
           <%= link_to 'DELETE', shop_path(@shop.id), {method: :delete, class: "link-text2"} %>
         </li>
         <div class="link-list2">
-          <p class="brand-name">ShopName</p>
-          <p class="brand-name2"><%= @shop.name %></p>
-          <p class="shop-url">URL</p>
-          <p class="shop-url2"><%= @shop.shop_url %></p>
+          <p class="link-name">Category</p>
+          <p class="link-name2"><%= @shop.genre.name %></p>
+          <p class="link-name">ShopName</p>
+          <p class="link-name2"><%= @shop.name %></p>
+          <p class="link-name">URL</p>
+          <p class="link-name2"><%= @shop.shop_url %></p>
         </div>
       </ul>
     </div>
