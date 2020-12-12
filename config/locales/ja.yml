@@ -8,3 +8,4 @@ ja:
        image: イメージ
        name: ブランドネーム
        shop_url: ショップURL
+       genre_id: カテゴリー

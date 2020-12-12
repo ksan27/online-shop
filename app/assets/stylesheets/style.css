@@ -196,7 +196,7 @@ main{
   margin: 40px 0 0 10px;
 }
 .link-list2{
-  background-color: #fff;
+  padding: 10px 10px;
 }
 .link-text1{
   color: #111111;
@@ -212,18 +212,15 @@ main{
   text-decoration: none;
   background-color: #fff;
 }
-.brand-name{
+.link-name1{
   font-size: 20px;
   margin: 50px 10px 10px;
 }
-.shop-url{
+.link-name{
   font-size: 20px;
   margin: 10px 10px;
 }
-.brand-name2{
-  margin: 10px 10px;
-}
-.shop-url2{
+.link-name2{
   margin: 10px 10px;
 }
 
