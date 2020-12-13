@@ -232,3 +232,7 @@ main{
   height: 300px;
   margin: 10px 10px;
 }
+/* ページネーション */
+.paginate{
+  text-align: center;
+}
