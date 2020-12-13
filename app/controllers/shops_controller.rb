@@ -5,6 +5,7 @@ class ShopsController < ApplicationController
 
   def index
     @shops = Shop.all
+    @shops = @shops.page(params[:page]).per(6)
   end
 
   def new
@@ -42,7 +43,7 @@ class ShopsController < ApplicationController
   private
 
   def shop_params
-    params.require(:shop).permit(:name, :shop_url, :image).merge(user_id: current_user.id)
+    params.require(:shop).permit(:name, :shop_url, :image, :genre_id).merge(user_id: current_user.id)
   end
 
   def set_shop

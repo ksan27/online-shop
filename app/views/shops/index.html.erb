@@ -45,6 +45,7 @@
         <%= link_to image_tag("bear.png", class: "bear"),new_shop_path %>
       </div>
     </div>
+    <%= paginate(@shops) %>
   <% else %>
   <div class="sample-image">
     <div class="sample-image2">

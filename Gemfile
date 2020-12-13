@@ -70,3 +70,4 @@ gem "omniauth-rails_csrf_protection"
 
 gem 'font-awesome-sass'
 gem 'active_hash'
+gem 'kaminari', '~> 0.17.0'
