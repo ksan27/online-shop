@@ -18,7 +18,6 @@
       <div class="favorite-list1">
         <p> -- Favorite List --</p>
       </div>
-      <%= link_to "profile", user_path(current_user.id), class: "my-page1"%>
     </div>
   <% else %>
   <div class="grid-6">
@@ -28,6 +27,11 @@
   </div>
   <% end %>
   <% if user_signed_in? && current_user.shops.length != 0 %>
+  <%= form_with(url: search_shops_path, local: true, method: :get, class: "search-form") do |f| %>
+    <%= f.text_field :keyword, placeholder: "ブランドを検索する", class: "search-input" %>
+    <%= button_tag type: 'submit', class: 'search-btn' do%>
+      検索<%= icon("fas", "search") %><% end%>
+  <% end %>
     <div class="sample-image">
       <% @shops.each do |shop| %>
         <% if current_user.id == shop.user_id %>
@@ -35,7 +39,7 @@
             <%= shop.name %>
             <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
           <div class="shops-name">
-            <%= link_to "CLICK！", shop.shop_url, class:"shop-name"%>
+            <%= link_to "click the URL", shop.shop_url, class:"shop-name"%>
           </div>
         </div>
         <% end %>
@@ -59,21 +63,21 @@
       <p>sample brand2</p>
       <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
       <div class="shops-name">
-        <a class="shop-name">CLICK！</a>
+        <a class="shop-name">click the URL</a>
       </div>
     </div>
     <div class="sample-image2">
       <p>sample brand3</p>
       <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
       <div class="shops-name">
-        <a class="shop-name">CLICK！</a>
+        <a class="shop-name">click the URL</a>
       </div>
     </div>
     <div class="sample-image2">
       <p>sample brand4</p>
       <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
       <div class="shops-name">
-        <a class="shop-name">CLICK！</a>
+        <a class="shop-name">click the URL</a>
       </div>
     </div>
   </div>

@@ -3,10 +3,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: serif;
 }
 main{
   width: 100vw;
   margin: 0 auto;
+  background-color: #fffcf9;
 }
 .text-image{
   width:100vw;
@@ -22,7 +24,6 @@ main{
 .text-image p{
   font-size: 55px;
   font-weight: bold;
-  font-family: serif;
   color: #111111;
   text-shadow:1px 0 0 #fff,0 1px 0 #fff,-1px 0 0 #fff,0 -1px 0 #fff;
 }
@@ -38,7 +39,6 @@ main{
   background-color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-family: serif;
   padding: 8px 16px;
   border: 2px solid #111111;
   margin: 20px 10px;
@@ -50,6 +50,7 @@ main{
 .title-all{
   width: 100%;
   text-align: center;
+  background-color: #fffcf9;
 }
 .title{
   display: inline-block;
@@ -57,7 +58,6 @@ main{
   padding: 15px 0;
   border-top:1px solid #111111;
   border-bottom: 1px solid #111111;
-  background-color: #fff;
   text-align: center;
   margin: 60px 5px 30px 5px;
 }
@@ -67,17 +67,15 @@ main{
 
 .favorite-list{
   font-size: 20px;
-  font-family: serif;
   font-weight: bold;
   text-align: center;
   margin: 20px 20px;
 }
 .favorite-list1{
   font-size: 20px;
-  font-family: serif;
   font-weight: bold;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 85px;
   margin: 0px 20px 20px;
 }
 .sample-image{
@@ -87,12 +85,12 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 25px;
 }
 .sample-image2{
-  font-family: serif;
   font-weight: bold;
-  padding-bottom: 20px;
 }
+/* サイドアイコン */
 .side-icon{
   position: fixed;
   bottom: 80px;
@@ -110,7 +108,6 @@ main{
 .shop-name{
   color: #111111;
   font-size: 15px;
-  font-family: serif;
   padding: 8px 10px;
   text-decoration: none;
   background-color: #fff;
@@ -134,7 +131,6 @@ main{
 .top-header2{
   background-color:#ffebe3;
   padding: 15px 0px;
-  font-family: serif;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -163,13 +159,12 @@ main{
 .my-page1{
   display: none;
 }
-.post1 {
+.post1, .post2 {
   max-width: 180px;
   font-size: 16px;
   color: #111111;
   text-decoration: none;
   font-weight: bold;
-  font-family: serif;
   padding: 8px 16px;
   margin-left: 10px;
   border: 2px solid #111111;
@@ -183,7 +178,6 @@ main{
   text-align: center;
   color: #111111;
   padding: 20px 0px;
-  font-family: serif;
 }
 /* 詳細ページのCSS */
 .show-image{
@@ -235,4 +229,29 @@ main{
 /* ページネーション */
 .paginate{
   text-align: center;
+}
+/* 検索フォーム */
+.search-form{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.search-input{
+  margin-bottom: 10px;
+}
+.search-btn{
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0 5px;
+  background-color: #fdf5ec;
+  border-radius: 3px;
+}
+.back-page{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.back{
+  color: #db7093;
+  background-color: #fdf5ec;
+  padding: 5px 5px;
+  border-radius: 3px;
 }
