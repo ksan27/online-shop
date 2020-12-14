@@ -11,4 +11,12 @@ class Shop < ApplicationRecord
     validates :shop_url, format: { with: %r{http(s)?://([-\w]+\.)+[-\w]+(/[-\w./?%&=]*)?}, message: 'は登録出来ない値です' }
   end
   validates :genre_id, numericality: { other_than: 1 }
+
+  def self.search(search)
+    if search != ""
+      Shop.where('name LIKE(?)', "%#{search}%")
+    else
+      Shop.all
+    end
+  end
 end

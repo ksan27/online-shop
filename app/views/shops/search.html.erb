@@ -1,0 +1,40 @@
+<%= render "header2" %>
+
+<main>
+  <div class="grid-6">
+      <div class="favorite-list1">
+        <p> -- Favorite List --</p>
+      </div>
+      <%= link_to "profile", user_path(current_user.id), class: "my-page1"%>
+    </div>
+  <%= form_with(url: search_shops_path, local: true, method: :get, class: "search-form") do |f| %>
+    <%= f.text_field :keyword, placeholder: "ブランドを検索する", class: "search-input" %>
+      <%= button_tag type: 'submit', class: 'search-btn' do%>
+      検索<%= icon("fas", "search") %><% end%>
+    <h2>-- 検索結果 --</h2>
+  <% end %>
+  </div>
+    <div class="sample-image">
+      <% @shops.each do |shop| %>
+        <% if current_user.id == shop.user_id %>
+        <div class="sample-image2">
+            <%= shop.name %>
+            <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
+          <div class="shops-name">
+            <%= link_to "check the URL", shop.shop_url, class:"shop-name"%>
+          </div>
+        </div>
+        <% end %>
+      <% end %>
+      <div class="side-icon">
+        <p>UPLOAD!</p>
+        <%= link_to image_tag("bear.png", class: "bear"),new_shop_path %>
+      </div>
+    </div>
+    <div class="back-page">
+      <%= link_to 'トップページへ戻る', root_path , class:"back"%>
+    </div>
+</main>
+<div class="footer">
+  <%= render "footer" %>
+</div>
