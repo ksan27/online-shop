@@ -14,7 +14,7 @@
     height: 180px;
     margin: 10px 10px;
   }
-  .my-page{
+  .post2{
     display:none;
   }
   .post1{
@@ -45,13 +45,16 @@
   .text-image p{
     font-size: 40px;
   }
-  .my-page1{
-    display: inline;
-    color: #111111;
-    font-weight: bold;
-    font-family: serif;
-    padding-bottom: 5px;
-    text-decoration: none;
-    border-bottom: dashed 1px #111111;
+  /* サイドアイコン */
+  .side-icon{
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    padding: 0 2px;
+    font-size: 15px;
+  }
+  .bear{
+    width: 40px;
+    height: 50px;
   }
 }

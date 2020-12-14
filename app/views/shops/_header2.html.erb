@@ -3,6 +3,6 @@
   <div class= btn-list>
     <li><%= link_to "#{current_user.nickname}さん", user_path(current_user.id), class: "my-page"%></li>
     <li><%= link_to "LOGOUT", destroy_user_session_path, method: :delete , class: "post1"%></li>
-    <li><%= link_to "UPLOAD", new_shop_path, class: "post1"%></li>
+    <li><%= link_to "UPLOAD", new_shop_path, class: "post2"%></li>
   </div>
 </div>
