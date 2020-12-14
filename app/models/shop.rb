@@ -13,7 +13,7 @@ class Shop < ApplicationRecord
   validates :genre_id, numericality: { other_than: 1 }
 
   def self.search(search)
-    if search != ""
+    if search != ''
       Shop.where('name LIKE(?)', "%#{search}%")
     else
       Shop.all

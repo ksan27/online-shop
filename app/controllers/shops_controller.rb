@@ -39,7 +39,7 @@ class ShopsController < ApplicationController
     @shop.destroy
     redirect_to root_path
   end
-  
+
   def search
     @shops = Shop.search(params[:keyword])
   end
