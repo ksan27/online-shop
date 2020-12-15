@@ -90,10 +90,7 @@ main{
   font-weight: bold;
 }
 /* 使い方説明 */
-.how{
-  padding-top: 60px;
-}
-.howto, .howto1{
+.howto{
   text-align: center;
   background-color: #fff;
   border: dashed 2px #ffebe3;

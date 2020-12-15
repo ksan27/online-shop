@@ -14,14 +14,13 @@
 <% end %>
 <main>
   <% if user_signed_in? && current_user.shops.length != 0 %>
-    <div class="how">
-      <div class="howto1">
+      <p class="go">Myfavoritesへようこそ！</p>
+      <div class="howto">
         <p>How to</p>
         <p>①uploadボタンから、好きなブランドを登録してね！</p>
         <p>②clickボタンを押すと、登録したURLのページへ飛ぶよ！</p>
         <p>③画像をクリックすると、登録した内容の確認ができるよ◎</p>
       </div>
-    </div>
     <div class="grid-6">
       <div class="favorite-list">
         <p> -- Favorite List --</p>
