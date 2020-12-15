@@ -50,16 +50,15 @@ main{
 .title-all{
   width: 100%;
   text-align: center;
-  background-color: #fffcf9;
 }
 .title{
   display: inline-block;
   max-width: 700px;
   padding: 15px 0;
-  border-top:1px solid #111111;
-  border-bottom: 1px solid #111111;
+  border-top:1px solid #db7093;
+  border-bottom: 1px solid #db7093;
   text-align: center;
-  margin: 60px 5px 30px 5px;
+  margin: 30px 5px;
 }
 .title h1{
   font-size: 20px;
@@ -90,6 +89,23 @@ main{
 .sample-image2{
   font-weight: bold;
 }
+/* 使い方説明 */
+.how{
+  padding-top: 60px;
+}
+.howto, .howto1{
+  text-align: center;
+  background-color: #fff;
+  border: dashed 2px #ffebe3;
+  margin: 0 130px 10px 130px;
+}
+.go{
+  color: #db7093;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 60px;
+  text-align: center;
+}
 /* サイドアイコン */
 .side-icon{
   position: fixed;
@@ -99,6 +115,7 @@ main{
   border: solid 2px #111111;
   border-radius: 5px;
   background-color: #fdf5ec;
+  text-align: center;
 }
 .bear{
   width: 50px;
@@ -121,6 +138,9 @@ main{
 }
 .shops-name{
   margin: 10px 0px 90px 0px;
+}
+.shop-name1{
+  margin: 10px 0px;
 }
 .sample1{
   width: 200px;
@@ -237,6 +257,7 @@ main{
 }
 .search-input{
   margin-bottom: 10px;
+  font-size: 16px;
 }
 .search-btn{
   font-family: sans-serif;
@@ -247,7 +268,7 @@ main{
 }
 .back-page{
   text-align: center;
-  margin-bottom: 5px;
+  padding-bottom: 60px;
 }
 .back{
   color: #db7093;

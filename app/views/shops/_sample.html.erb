@@ -1,0 +1,43 @@
+  <% if user_signed_in? %>
+    <div class="grid-6">
+      <div class="favorite-list">
+        <p> -- Favorite List --</p>
+      </div>
+    </div>
+  <% else %>
+  <div class="grid-6">
+    <%= link_to "LOGIN", new_user_session_path, class: "post"%>
+    <%= link_to "SIGN UP", new_user_registration_path, class: "post"%>
+    <p class="favorite-list"> -- Favorite List --</p>
+  </div>
+  <% end %>
+<div class="sample-image">
+    <div class="sample-image2">
+      <p>sample brand1</p>
+      <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
+      <div class="shops-name">
+        <a class="shop-name">CLICKでURLへ！</a>
+      </div>
+    </div>
+    <div class="sample-image2">
+      <p>sample brand2</p>
+      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
+      <div class="shops-name">
+        <a class="shop-name">click the URL</a>
+      </div>
+    </div>
+    <div class="sample-image2">
+      <p>sample brand3</p>
+      <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
+      <div class="shops-name">
+        <a class="shop-name">click the URL</a>
+      </div>
+    </div>
+    <div class="sample-image2">
+      <p>sample brand4</p>
+      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
+      <div class="shops-name">
+        <a class="shop-name">click the URL</a>
+      </div>
+    </div>
+</div>

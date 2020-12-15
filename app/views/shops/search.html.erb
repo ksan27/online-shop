@@ -11,7 +11,7 @@
     <%= f.text_field :keyword, placeholder: "ブランドを検索する", class: "search-input" %>
       <%= button_tag type: 'submit', class: 'search-btn' do%>
       検索<%= icon("fas", "search") %><% end%>
-    <h2>-- 検索結果 --</h2>
+    <p>-- 検索結果 --</p>
   <% end %>
   </div>
     <div class="sample-image">
@@ -20,7 +20,7 @@
         <div class="sample-image2">
             <%= shop.name %>
             <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
-          <div class="shops-name">
+          <div class="shops-name1">
             <%= link_to "click the URL", shop.shop_url, class:"shop-name"%>
           </div>
         </div>

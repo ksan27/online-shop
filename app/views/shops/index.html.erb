@@ -13,25 +13,25 @@
 </div>
 <% end %>
 <main>
-  <% if user_signed_in? %>
+  <% if user_signed_in? && current_user.shops.length != 0 %>
+    <div class="how">
+      <div class="howto1">
+        <p>How to</p>
+        <p>①uploadボタンから、好きなブランドを登録してね！</p>
+        <p>②clickボタンを押すと、登録したURLのページへ飛ぶよ！</p>
+        <p>③画像をクリックすると、登録した内容の確認ができるよ◎</p>
+      </div>
+    </div>
     <div class="grid-6">
-      <div class="favorite-list1">
+      <div class="favorite-list">
         <p> -- Favorite List --</p>
       </div>
     </div>
-  <% else %>
-  <div class="grid-6">
-    <%= link_to "LOGIN", new_user_session_path, class: "post"%>
-    <%= link_to "SIGN UP", new_user_registration_path, class: "post"%>
-    <p class="favorite-list"> -- Favorite List --</p>
-  </div>
-  <% end %>
-  <% if user_signed_in? && current_user.shops.length != 0 %>
-  <%= form_with(url: search_shops_path, local: true, method: :get, class: "search-form") do |f| %>
-    <%= f.text_field :keyword, placeholder: "ブランドを検索する", class: "search-input" %>
-    <%= button_tag type: 'submit', class: 'search-btn' do%>
-      検索<%= icon("fas", "search") %><% end%>
-  <% end %>
+    <%= form_with(url: search_shops_path, local: true, method: :get, class: "search-form") do |f| %>
+      <%= f.text_field :keyword, placeholder: "ブランドを検索する", class: "search-input" %>
+      <%= button_tag type: 'submit', class: 'search-btn' do%>
+        検索<%= icon("fas", "search") %><% end%>
+    <% end %>
     <div class="sample-image">
       <% @shops.each do |shop| %>
         <% if current_user.id == shop.user_id %>
@@ -44,43 +44,27 @@
         </div>
         <% end %>
       <% end %>
-      <div class="side-icon">
-        <p>UPLOAD!</p>
-        <%= link_to image_tag("bear.png", class: "bear"),new_shop_path %>
-      </div>
+    </div>
+    <div class="side-icon">
+      <p>UPLOAD!</p>
+      <%= link_to image_tag("bear.png", class: "bear"),new_shop_path %>
     </div>
     <%= paginate(@shops) %>
-  <% else %>
-  <div class="sample-image">
-    <div class="sample-image2">
-      <p>sample brand1</p>
-      <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <div class="shops-name">
-        <a class="shop-name">CLICKでURLへ！</a>
-      </div>
+  <% elsif user_signed_in? %>
+    <p class="go">さぁ、Myfavoritesを始めてみよう！</p>
+    <div class="howto">
+      <p>How to</p>
+      <p>①uploadボタンから、好きなブランドを登録してね！</p>
+      <p>②clickボタンを押すと、登録したURLのページへ飛ぶよ！</p>
+      <p>③画像をクリックすると、登録した内容の確認ができるよ◎</p>
     </div>
-    <div class="sample-image2">
-      <p>sample brand2</p>
-      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <div class="shops-name">
-        <a class="shop-name">click the URL</a>
-      </div>
-    </div>
-    <div class="sample-image2">
-      <p>sample brand3</p>
-      <%= image_tag "sample.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <div class="shops-name">
-        <a class="shop-name">click the URL</a>
-      </div>
-    </div>
-    <div class="sample-image2">
-      <p>sample brand4</p>
-      <%= image_tag "sample2.JPG", alt: "sample", id: "sample", class: "sample1" %>
-      <div class="shops-name">
-        <a class="shop-name">click the URL</a>
-      </div>
-    </div>
+    <%= render "sample" %>
+  <div class="side-icon">
+    <p>UPLOAD!</p>
+    <%= link_to image_tag("bear.png", class: "bear"),new_shop_path %>
   </div>
+  <% else %>
+    <%= render "sample" %>
   <% end %>
 </main>
 <div class="footer">
