@@ -4,16 +4,17 @@
     <%= form_with(model: @shop, id: 'new_user', class: 'new_user', local: true) do |f| %>
     <%= render 'layouts/error_messages', model: f.object%>
     <%# イメージ %>
+    <div class="image-text">
+      *イメージ画像
+    </div>
     <div class="img-upload">
-      <div class="image-text">
-        *イメージ画像
-      </div>
       <div class="click-upload">
         <p>
           クリックしてファイルをアップロード
         </p>
         <%= f.file_field :image, {id:"item-image", class: "file-form"} %>
       </div>
+      <div id="image-preview"></div>
     </div>
     <%# イメージ %>
       <div class="field">
