@@ -18,6 +18,7 @@
           <p class="link-name2"><%= @shop.name %></p>
           <p class="link-name">URL</p>
           <p class="link-name2"><%= @shop.shop_url %></p>
+          <%= paginate(@shops) %>
         </div>
       </ul>
     </div>
