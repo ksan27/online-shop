@@ -246,6 +246,14 @@ main{
 /* ページネーション */
 .paginate{
   text-align: center;
+  color: #111111;
+}
+.page a{
+  color: #F06C85;
+  text-decoration: none;
+}
+.first a, .prev a, .next a, .last a{
+  color: #F06C85;
 }
 /* 検索フォーム */
 .search-form{
