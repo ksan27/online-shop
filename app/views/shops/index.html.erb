@@ -35,6 +35,12 @@
       <% @shops.each do |shop| %>
         <% if current_user.id == shop.user_id %>
         <div class="sample-image2">
+          <% if shop.favorites.present? %>
+            <div class="parent">
+              <div class="like"></div>
+              <p>like</p>
+            </div>
+          <% end %>
             <%= shop.name %>
             <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
           <div class="shops-name">

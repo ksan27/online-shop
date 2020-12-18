@@ -72,3 +72,5 @@ gem 'font-awesome-sass'
 gem 'active_hash'
 gem 'kaminari', '~> 0.17.0'
 gem 'ransack'
+
+gem 'jquery-rails'
