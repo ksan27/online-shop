@@ -10,7 +10,5 @@ Rails.application.routes.draw do
     end
     resource :favorites, only: [:create, :destroy]
   end
-  resources :users, only: [:show] do
-    get :favorites, on: :collection
-  end
+  resources :users, only: [:show]
 end

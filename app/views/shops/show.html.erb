@@ -2,6 +2,9 @@
 <main>
  <div class="main1">
   <div class="sample-image2">
+      <div id="favorite">
+        <%= render partial: 'favorites/favorite', locals: { shop: @shop} %>
+      </div>
     <div class="show-image">
       <%= image_tag @shop.image, class: 'sample2' %>
       <ul class="link-list">

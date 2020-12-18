@@ -1,20 +1,21 @@
 class FavoritesController < ApplicationController
-  before_action :set_post
+  before_action :set_favorite_shop, only: [:create, :destroy]
   before_action :authenticate_user!
 
   def create
-    if  @post.user_id == current_user.id
-      @favorite = Favorite.create(user_id: current_user.id, post_id: @post.id)
+    if  @shop.user_id == current_user.id
+      @favorite = Favorite.create(user_id: current_user.id, shop_id: @shop.id)
+      @favorite.save
     end
   end
 
-  def 
-    @favorite = Favorite.find_by(user_id: current_user.id, post_id: @post.id)
+  def destroy
+    @favorite = Favorite.find_by(user_id: current_user.id, shop_id: @shop.id)
     @favorite.destroy
   end
 
   private
-  def set_shop
+  def set_favorite_shop
     @shop = Shop.find(params[:shop_id])
   end
 end

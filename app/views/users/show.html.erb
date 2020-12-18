@@ -1,4 +1,23 @@
 <%= render "shops/header2" %>
+<main>
+<% if @favorite_list.present?%>
+  <p class="favorite-list1">-- Likes List --</p>
+  <div class="sample-image">
+    <% @favorite_list.each do |shop| %>
+        <div class="sample-image2">
+            <%= shop.name %>
+            <div class="parent">
+              <div class="like"></div>
+              <p>like</p>
+            </div>
+            <br><%= link_to image_tag(shop.image, class: "sample1"), shop_path(shop.id)%>
+          <div class="shops-name1">
+            <%= link_to "click the URL", shop.shop_url, class:"shop-name"%>
+          </div>
+        </div>
+    <% end%>
+  </div>
+<%end%>
   <p class="favorite-list1">--About Me--</p>
   <div class="profile">
     <div class="profile2">
@@ -10,6 +29,7 @@
      <br><%= link_to "Back", root_path, class: "user-back" %>
     </div>
   </div>
+</main>
 <div class="footer">
   <%= render "shops/footer" %>
 </div>
