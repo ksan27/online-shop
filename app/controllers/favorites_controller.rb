@@ -3,7 +3,7 @@ class FavoritesController < ApplicationController
   before_action :authenticate_user!
 
   def create
-    if  @shop.user_id == current_user.id
+    if @shop.user_id == current_user.id
       @favorite = Favorite.create(user_id: current_user.id, shop_id: @shop.id)
       @favorite.save
     end
@@ -15,6 +15,7 @@ class FavoritesController < ApplicationController
   end
 
   private
+
   def set_favorite_shop
     @shop = Shop.find(params[:shop_id])
   end
