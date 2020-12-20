@@ -282,12 +282,14 @@ main{
   border-radius: 3px;
 }
 /* お気に入り詳細 */
-#favorite{
+.favorite {
   position: fixed;
-  bottom: 90px;
+  bottom: 170px;
   right: 50px;
-  color: darkgray;
   font-size: 40px;
+}
+.heart{
+  color: darkgray;
 }
 .heart2{
   color: #F0897F;

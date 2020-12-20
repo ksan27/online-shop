@@ -1,9 +1,9 @@
 <% if !Favorite.exists?(user: current_user, shop_id: @shop.id) %>
-    <%= link_to shop_favorites_path(@shop), method: :post, id: "favorite", remote: true, class: "favorite-btn favorite-post" do %>
-        <i class="fas fa-heart"></i>
+    <%= link_to shop_favorites_path(@shop), method: :post, remote: true, class: "favorite-btn favorite-post" do %>
+        <i class="fas fa-heart heart"></i>
     <% end %>
   <% else %>
-    <%= link_to shop_favorites_path(@shop), method: :delete, id: "favorite", remote: true, class: "favorite-btn favorite-delete" do %>
+    <%= link_to shop_favorites_path(@shop), method: :delete, remote: true, class: "favorite-btn favorite-delete" do %>
         <i class="fas fa-heart heart2"></i>
     <% end %>
 <% end%>

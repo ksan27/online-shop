@@ -2,9 +2,6 @@
 <main>
  <div class="main1">
   <div class="sample-image2">
-      <div id="favorite">
-        <%= render partial: 'favorites/favorite', locals: { shop: @shop} %>
-      </div>
     <div class="show-image">
     <% @shops.each do |shop|%>
       <%= image_tag shop.image, class: 'sample2' %>
@@ -24,6 +21,11 @@
           <p class="link-name2"><%= shop.shop_url %></p>
       <% end %>
       <%= paginate(@shops) %>
+      <% if @shops.first_page? %>
+        <div id="favorite_<%= @shop.id %>" class="favorite">
+          <%= render partial: 'favorites/favorite', locals: { shop: @shop} %>
+        </div>
+      <% end %>
         </div>
       </ul>
     </div>
