@@ -106,5 +106,40 @@ id: admin
 - belongs_to :user
 
 ### ローカルでの動作方法
-パッケージ: 
-Rubyのバージョン:6.0.0
+必要なコマンド: git clone https://github.com/ksan27/online-shop.git
+バージョン: Ruby on rails 6.0.0
+パッケージ:
+  Gem actionmailer-6.0.0
+  actionpack (= 6.0.0)
+  actionview (= 6.0.0)
+  activejob (= 6.0.0)
+  mail (~> 2.5, >= 2.5.4)
+  rails-dom-testing (~> 2.0)
+
+Gem actionmailer-6.0.2.1
+  actionpack (= 6.0.2.1)
+  actionview (= 6.0.2.1)
+  activejob (= 6.0.2.1)
+  mail (~> 2.5, >= 2.5.4)
+  rails-dom-testing (~> 2.0)
+
+Gem actionmailer-6.0.2.2
+  actionpack (= 6.0.2.2)
+  actionview (= 6.0.2.2)
+  activejob (= 6.0.2.2)
+  mail (~> 2.5, >= 2.5.4)
+  rails-dom-testing (~> 2.0)
+
+Gem actionmailer-6.0.3.2
+  actionpack (= 6.0.3.2)
+  actionview (= 6.0.3.2)
+  activejob (= 6.0.3.2)
+  mail (~> 2.5, >= 2.5.4)
+  rails-dom-testing (~> 2.0)
+
+Gem actionmailer-6.0.3.4
+  actionpack (= 6.0.3.4)
+  actionview (= 6.0.3.4)
+  activejob (= 6.0.3.4)
+  mail (~> 2.5, >= 2.5.4)
+  rails-dom-testing (~> 2.0)
