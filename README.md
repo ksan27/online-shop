@@ -20,6 +20,7 @@ email: sample@sample.com
 ### Basic認証
 id: admin
 <br>password: 2222
+
 ![pink](https://user-images.githubusercontent.com/73518765/102959001-a4706a00-4521-11eb-8a31-886d09412302.jpg)
 
 <img width="1206" alt="スクリーンショット 2020-12-18 15 50 00 2" src="https://user-images.githubusercontent.com/73518765/102955445-3f187b00-4519-11eb-9968-6f4cef6acb13.png">
