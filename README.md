@@ -1,7 +1,7 @@
-# README
+# myfavorites
 
-## myfavorites
 <img width="1134" alt="myfavorites" src="https://user-images.githubusercontent.com/73518765/102954594-2909bb00-4517-11eb-9d8f-b8e5ed6a3824.png">
+### 概要
 お洋服やコスメ、お洒落が大好きな方に向けたサービスになります。
 <br>好きな画像にブランドのurlを登録して、自分好みのブランドまとめサイトが作れます。
 <br>ログイン後、uploadボタンから自分専用のホームページにurlを登録し、登録した画像が表示されます。
@@ -18,11 +18,12 @@ email: sample@sample.com
 id: admin
 <br>password: 2222
 
+<img width="1206" alt="スクリーンショット 2020-12-18 15 50 00 2" src="https://user-images.githubusercontent.com/73518765/102955445-3f187b00-4519-11eb-9968-6f4cef6acb13.png">
 ### 利用方法
-トップページから新規登録・ログインが可能です。(⚠︎本サービスはアカウントを作成していないとご利用できません)
-<br>ログイン後、右上にUPLOADボタンが表示されるので、そちらから画像・ブランドネーム・URLを投稿できます。
-<br>投稿した画像の下のCLICKボタンを押すと登録したURLに飛ぶことができます。また、投稿された画像の詳細等は、画像をクリックするとご覧いただけます。
-<br>アカウントを編集したい場合は、ログイン後、右上にある自分の名前をクリックすると詳細ページに移動し編集・削除が可能です。
+◎トップページから新規登録・ログインが可能です。<span style="color: #fa8072; ">(⚠︎本サービスはアカウントを作成していないとご利用できません)</span>
+<br>◎ログイン後、右上にUPLOADボタンが表示されるので、そちらから画像・ブランドネーム・URLを投稿できます。
+<br>◎投稿した画像の下のCLICKボタンを押すと登録したURLに飛ぶことができます。また、投稿された画像の詳細等は、画像をクリックするとご覧いただけます。
+<br>◎アカウントを編集したい場合は、ログイン後、右上にある自分の名前をクリックすると詳細ページに移動し編集・削除が可能です。
 
 ### 目指した課題解決
 お洋服やコスメ、お洒落が大好きな方に向けたサービスになります。
@@ -69,7 +70,7 @@ id: admin
 
 ## データベース設計
 
-## users テーブル
+### users テーブル
 
 | Column   | Type   | Options     |
 | -------- | ------ | ----------- |
@@ -82,7 +83,7 @@ id: admin
 - has_many :shops
 - has_many :sns_credentials
 
-## shops テーブル
+### shops テーブル
 
 | Column   | Type       | Options     |
 | -------- | ---------- | ----------- |
@@ -95,7 +96,7 @@ id: admin
 
 - belongs_to :user
 
-## sns_credentials テーブル
+### sns_credentials テーブル
 | Column   | Type       | Options     |
 | -------- | ---------- | ----------- |
 | provider | string     | null: false |
@@ -108,39 +109,4 @@ id: admin
 
 ### ローカルでの動作方法
 必要なコマンド: git clone https://github.com/ksan27/online-shop.git
-バージョン: Ruby on rails 6.0.0
-パッケージ:
-  Gem actionmailer-6.0.0
-  actionpack (= 6.0.0)
-  actionview (= 6.0.0)
-  activejob (= 6.0.0)
-  mail (~> 2.5, >= 2.5.4)
-  rails-dom-testing (~> 2.0)
-
-Gem actionmailer-6.0.2.1
-  actionpack (= 6.0.2.1)
-  actionview (= 6.0.2.1)
-  activejob (= 6.0.2.1)
-  mail (~> 2.5, >= 2.5.4)
-  rails-dom-testing (~> 2.0)
-
-Gem actionmailer-6.0.2.2
-  actionpack (= 6.0.2.2)
-  actionview (= 6.0.2.2)
-  activejob (= 6.0.2.2)
-  mail (~> 2.5, >= 2.5.4)
-  rails-dom-testing (~> 2.0)
-
-Gem actionmailer-6.0.3.2
-  actionpack (= 6.0.3.2)
-  actionview (= 6.0.3.2)
-  activejob (= 6.0.3.2)
-  mail (~> 2.5, >= 2.5.4)
-  rails-dom-testing (~> 2.0)
-
-Gem actionmailer-6.0.3.4
-  actionpack (= 6.0.3.4)
-  actionview (= 6.0.3.4)
-  activejob (= 6.0.3.4)
-  mail (~> 2.5, >= 2.5.4)
-  rails-dom-testing (~> 2.0)
+<br>バージョン: Ruby on rails 6.0.0
