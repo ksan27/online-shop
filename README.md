@@ -1,6 +1,7 @@
 # README
 
 ## myfavorites
+<img width="1134" alt="myfavorites" src="https://user-images.githubusercontent.com/73518765/102954594-2909bb00-4517-11eb-9d8f-b8e5ed6a3824.png">
 お洋服やコスメ、お洒落が大好きな方に向けたサービスになります。
 <br>好きな画像にブランドのurlを登録して、自分好みのブランドまとめサイトが作れます。
 <br>ログイン後、uploadボタンから自分専用のホームページにurlを登録し、登録した画像が表示されます。
