@@ -2,6 +2,8 @@
 
 <img width="1134" alt="myfavorites" src="https://user-images.githubusercontent.com/73518765/102954594-2909bb00-4517-11eb-9d8f-b8e5ed6a3824.png">
 
+![pink](https://user-images.githubusercontent.com/73518765/102959001-a4706a00-4521-11eb-8a31-886d09412302.jpg)
+
 ### 概要
 お洋服やコスメ、お洒落が大好きな方に向けたサービスになります。
 <br>好きな画像にブランドのurlを登録して、自分好みのブランドまとめサイトが作れます。
@@ -18,8 +20,11 @@ email: sample@sample.com
 ### Basic認証
 id: admin
 <br>password: 2222
+![pink](https://user-images.githubusercontent.com/73518765/102959001-a4706a00-4521-11eb-8a31-886d09412302.jpg)
 
 <img width="1206" alt="スクリーンショット 2020-12-18 15 50 00 2" src="https://user-images.githubusercontent.com/73518765/102955445-3f187b00-4519-11eb-9968-6f4cef6acb13.png">
+
+![pink](https://user-images.githubusercontent.com/73518765/102959001-a4706a00-4521-11eb-8a31-886d09412302.jpg)
 
 ### 利用方法
 ◎トップページから新規登録・ログインが可能です。(⚠︎本サービスはアカウントを作成していないとご利用できません)
@@ -30,6 +35,8 @@ id: admin
 ### 目指した課題解決
 お洋服やコスメ、お洒落が大好きな方に向けたサービスになります。
 <br>普段はあまり買わないけど「バックが可愛いお店なんだっけ...?」「少し高めのブランドの名前なんだっけ...?」など、好きだけど名前を忘れてしまった！というもやもやに対して、好きなブランドをたくさん登録でき、そのブランドのURLまで飛べるサービスがあれば、思い出す時間が短縮でき、なおかつひとつひとつ検索する時間も短縮できるのではないかと思いサービスを作りました。
+
+![pink](https://user-images.githubusercontent.com/73518765/102959001-a4706a00-4521-11eb-8a31-886d09412302.jpg)
 
 ### 要件定義
 機能: ログイン・新規登録機能
@@ -70,6 +77,7 @@ id: admin
 <br>目的: 特にお気に入りのブランドを登録できることで、わかりやすくするため
 <br>詳細: ブランド詳細ページからlikeができる。likeしたブランドはプロフィール詳細ページに一覧で表示され、トップページにもlike済みの表示がされる。
 
+![pink](https://user-images.githubusercontent.com/73518765/102959001-a4706a00-4521-11eb-8a31-886d09412302.jpg)
 
 ## データベース設計
 
@@ -113,3 +121,6 @@ id: admin
 ### ローカルでの動作方法
 必要なコマンド: git clone https://github.com/ksan27/online-shop.git
 <br>バージョン: Ruby on rails 6.0.0
+
+![pink](https://user-images.githubusercontent.com/73518765/102959001-a4706a00-4521-11eb-8a31-886d09412302.jpg)
+
