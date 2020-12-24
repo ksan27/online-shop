@@ -3,29 +3,36 @@
  <div class="main1">
   <div class="sample-image2">
     <div class="show-image">
-    <% @shops.each do |shop|%>
-      <%= image_tag shop.image, class: 'sample2' %>
+      <%= image_tag @shop.image, class: 'sample2' %>
       <ul class="link-list">
         <li>
           <%= link_to 'EDIT', edit_shop_path, {method: :get, class: "link-text1"} %>
         </li>
         <li>
-          <%= link_to 'DELETE', shop_path(shop.id), {method: :delete, class: "link-text2"} %>
+          <%= link_to 'DELETE', shop_path(@shop.id), {method: :delete, class: "link-text2"} %>
         </li>
         <div class="link-list2">
           <p class="link-name">Category</p>
-          <p class="link-name2"><%= shop.genre.name %></p>
+          <p class="link-name2"><%= @shop.genre.name %></p>
           <p class="link-name">ShopName</p>
-          <p class="link-name2"><%= shop.name %></p>
+          <p class="link-name2"><%= @shop.name %></p>
           <p class="link-name">URL</p>
-          <p class="link-name2"><%= shop.shop_url %></p>
-      <% end %>
-      <%= paginate(@shops) %>
-      <% if @shops.first_page? %>
+          <p class="link-name2"><%= @shop.shop_url %></p>
+        </div>
         <div id="favorite_<%= @shop.id %>" class="favorite">
           <%= render partial: 'favorites/favorite', locals: { shop: @shop} %>
         </div>
-      <% end %>
+        <div class="shop-next">
+          <% if @shop.previous.present? %>
+            <%= link_to shop_path(@shop.previous), {class: "shop-next"} do %>
+              <i class="fas fa-angle-double-left"></i> 前へ
+            <% end %>
+          <% end %>
+          <% if @shop.next.present? %>
+            <%= link_to shop_path(@shop.next), {class: "shop-next"} do %>
+              次へ <i class="fas fa-angle-double-right"></i>
+            <% end %>
+          <% end %>
         </div>
       </ul>
     </div>

@@ -22,7 +22,6 @@ class ShopsController < ApplicationController
   end
 
   def show
-    @shops = Shop.all.page(params[:page]).per(1)
   end
 
   def edit

@@ -20,4 +20,12 @@ class Shop < ApplicationRecord
       Shop.all
     end
   end
+
+  def previous
+    user.shops.order('created_at desc, id desc').where('created_at <= ? and id < ?', created_at, id).first
+  end
+
+  def next
+    user.shops.order('created_at desc, id desc').where('created_at >= ? and id > ?', created_at, id).reverse.first
+  end
 end

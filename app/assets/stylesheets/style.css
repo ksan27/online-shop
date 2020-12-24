@@ -243,6 +243,12 @@ main{
   height: 300px;
   margin: 0px 10px;
 }
+.shop-next{
+  color: #F06C85;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 10px;
+}
 /* ページネーション */
 .paginate{
   text-align: center;
