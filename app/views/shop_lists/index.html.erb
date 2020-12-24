@@ -1,0 +1,17 @@
+<%= render "shops/header2" %>
+<main>
+  <p class="favorite-list1">--brand list--</p>
+  <div class="sample-image">
+  <% @shoplists.each do |list| %>
+  <div class="sample-image2">
+      <div class="shops-name">
+        <p><%= list.name %></p>
+        <br><%= link_to "ホームページへいく", list.shop_url, class:"shop-name"%>
+      </div>
+  </div>
+  <% end %>
+  </div>
+</main>
+<div class="footer">
+  <%= render "shops/footer" %>
+</div>

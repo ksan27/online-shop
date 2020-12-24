@@ -99,14 +99,15 @@ id: admin
 
 | Column   | Type       | Options     |
 | -------- | ---------- | ----------- |
-| title    | string     | null: false |
+| name     | string     | null: false |
 | shop_url | string     | null: false |
-| genre_id | integer     | null: false |
-| user     | references | null: false, foreign_key: true |
+| genre_id | integer    | null: false |
+| user        | references  | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
+- belongs_to :genre_id
 
 ### sns_credentials テーブル
 | Column   | Type       | Options     |
@@ -118,6 +119,13 @@ id: admin
 ### Association
 
 - belongs_to :user
+
+### shop_list テーブル
+| Column   | Type       | Options     |
+| -------- | ---------- | ----------- |
+| name     | string     | null: false |
+| shop_url | string     | null: false |
+| genre_id | integer    | null: false |
 
 ### ローカルでの動作方法
 必要なコマンド: git clone https://github.com/ksan27/online-shop.git

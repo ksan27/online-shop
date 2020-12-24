@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+ShopList.create(name:'ZARA', shop_url:'https://www.zara.com/jp/', genre_id:'2')
+ShopList.create(name:'H&M', shop_url:'https://www2.hm.com/ja_jp/index.html', genre_id:'2')
+ShopList.create(name:'GU', shop_url:'https://www.gu-global.com/jp/ja/women/', genre_id:'2')
+ShopList.create(name:'LOWRYS FARM', shop_url:'https://www.dot-st.com/lowrysfarm/', genre_id:'2')
+ShopList.create(name:'earth music&ecology', shop_url:'https://stripe-club.com/earth1999/', genre_id:'2')
+ShopList.create(name:'dazzlin', shop_url:'https://runway-webstore.com/dazzlin/', genre_id:'3')
+ShopList.create(name:'Heather', shop_url:'https://www.dot-st.com/heather/', genre_id:'3')
+ShopList.create(name:'NICE CLAUP', shop_url:'https://shop.niceclaup.jp/?gclid=Cj0KCQiAlZH_BRCgARIsAAZHSBk78FQ9Bw33P7lIrXcwLXjC9DUSZd-eXGZzM8icr-QGjXll-s99P40aAqbpEALw_wcB', genre_id:'3')
+ShopList.create(name:'SNIDEL', shop_url:'https://snidel.com/', genre_id:'5')
+ShopList.create(name:'Lily Brown', shop_url:'https://lily-brw.com/', genre_id:'5')
+ShopList.create(name:'FRAY I.D', shop_url:'https://fray-id.com/', genre_id:'5')
+ShopList.create(name:'MISCH MASCH', shop_url:'http://www.mischmasch.jp/', genre_id:'5')
+ShopList.create(name:'JILL by JILLSTUART', shop_url:'https://store.saneibd.com/jillbyjillstuart', genre_id:'5')
