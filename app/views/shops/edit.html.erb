@@ -4,18 +4,24 @@
     <%= form_with(model: @shop, id: 'new_user', class: 'new_user', local: true) do |f| %>
     <%= render 'layouts/error_messages', model: f.object%>
     <%# イメージ %>
-    <div class="img-upload">
       <div class="image-text">
         *イメージ画像
       </div>
+    <div class="img-upload">
       <div class="click-upload">
         <p>
           クリックしてファイルをアップロード
         </p>
         <%= f.file_field :image, {id:"item-image", class: "file-form"} %>
       </div>
+       <div id="image-preview"></div>
     </div>
     <%# イメージ %>
+      <div class="field">
+        *<%= f.label :genre_id %><br />
+        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+      </div>
+
       <div class="field">
         *<%= f.label :name %><br />
         <%= f.text_field :name, {class: "form"} %>
@@ -27,7 +33,7 @@
       </div>
 
       <div class="actions">
-        <%= f.submit "アップロード", {class: "submit"}%>
+        <%= f.submit "アップデート", {class: "submit"}%>
       </div>
       
       <div class="attention-message">

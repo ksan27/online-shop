@@ -1,15 +1,23 @@
 <%= render "shops/header2" %>
 <main>
-  <p class="favorite-list1">--brand list--</p>
-  <div class="sample-image">
-  <% @shoplists.each do |list| %>
-  <div class="sample-image2">
-      <div class="shops-name">
-        <p><%= list.name %></p>
-        <br><%= link_to "ホームページへいく", list.shop_url, class:"shop-name"%>
-      </div>
+  <div class="grid-6">
+    <p class="favorite-list1">-- Brand List --</p>
+    <p class="home1">クリックするとそれぞれのホームページに行きます</p>
   </div>
-  <% end %>
+  <div class="sample-image">
+    <% @shoplists.each do |list| %>
+      <div class="sample-image2">
+          <div class="shops-name">
+            <div class="homepage">
+              <%= link_to "#{list.name}", list.shop_url, class:"home"%>
+            </div>
+          </div>
+      </div>
+    <% end %>
+    <div class="side-icon">
+      <p>B A C K !</p>
+      <%= link_to image_tag("bear.png", class: "bear"),root_path %>
+    </div>
   </div>
 </main>
 <div class="footer">

@@ -103,6 +103,22 @@ main{
   padding-top: 60px;
   text-align: center;
 }
+/* ショップページへのリンク */
+.shoplist-button{
+  background-color:#fef4f4;
+  text-decoration: none;
+  display: block;
+  padding:20px 0;
+  color: #F0897F;
+  text-align: center;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  font-weight: bold;
+}
+.fa-check{
+  margin-right: 10px;
+  font-size: 20px;
+}
 /* サイドアイコン */
 .side-icon{
   position: fixed;
@@ -318,4 +334,26 @@ main{
   left: 12px;
   color: #fff;
   transform: rotate(-45deg);
+}
+.homepage{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: #fef4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.homepage :hover{
+  background-color: #ede4e1;
+}
+.home{
+  text-decoration: none;
+  color: #000;
+}
+.home1{
+  color: #db7093;
+  font-size: 15px;
+  padding-bottom: 10px;
 }

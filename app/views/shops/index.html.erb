@@ -54,8 +54,10 @@
       <p>UPLOAD!</p>
       <%= link_to image_tag("bear.png", class: "bear"),new_shop_path %>
     </div>
-    <%= link_to "ブランドを見る", shop_lists_path, class:"shop-name"%>
     <%= paginate(@shops) %>
+    <%= link_to shop_lists_path, class:"shoplist-button" do %>
+      <i class="fas fa-check"></i>my favoritesが用意したブランド一覧を見る
+    <% end %>
   <% elsif user_signed_in? %>
     <p class="go">さぁ、Myfavoritesを始めてみよう！</p>
     <div class="howto">
